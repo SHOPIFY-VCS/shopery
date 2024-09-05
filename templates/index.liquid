@@ -373,7 +373,7 @@
       </h2>
       <div class="items space-y-4">
         {% for product in collections['hot-deals'].products %}
-        {% render 'product-item-grid' , product: product %}
+        {% render 'product-item-list' , product: product %}
         {% endfor %}
       </div>
     </div>
@@ -384,7 +384,7 @@
       </h2>
       <div class="items space-y-4">
         {% for product in collections['on-sell-products'].products %}
-        {% render 'product-item-grid' , product: product %}
+        {% render 'product-item-list' , product: product %}
         {% endfor %}
       </div>
     </div>
@@ -395,7 +395,7 @@
       </h2>
       <div class="items space-y-4">
         {% for product in collections['deal-of-the-week'].products %}
-        {% render 'product-item-grid' , product: product %}
+        {% render 'product-item-list' , product: product %}
         {% endfor %}
       </div>
     </div>
@@ -406,7 +406,7 @@
       </h2>
       <div class="items space-y-4">
         {% for product in collections['best-seller'].products %}
-        {% render 'product-item-grid' , product: product %}
+        {% render 'product-item-list' , product: product %}
         {% endfor %}
       </div>
     </div>
