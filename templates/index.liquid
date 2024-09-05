@@ -1,5 +1,4 @@
 {% comment %} Slider {% endcomment %}
- {{ 'img__bg_slider.svg' | asset_url }}
 <section id="heroSlider">
   <div
     class="col-span-2 sm:col-span-1 md:col-span-2 bg-gray-50 h-auto md:h-full flex flex-col relative w-full h-full overflow-hidden  bg-top bg-no-repeat py-[80px] md:py-[105px]"
@@ -201,6 +200,9 @@
     </div>
   </div>
 </section>
+{% for collection in collections %}
+  {{- collection.title | link_to: collection.url }}
+{% endfor %}
 {% comment %} Feature Products {% endcomment %}
 <section class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8 xl:px-0  mb-[80px] mt-[40px]">
   <div class="flex flex-row flex-wrap content-center justify-between items-center mb-[40px]">
