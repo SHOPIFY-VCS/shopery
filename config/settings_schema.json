@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [
   {
     "name": "theme_info",
@@ -8,3 +9,15 @@
     "theme_support_url": "https://support.shopify.com/"
   }
 ]
+=======
+[
+  {
+    "name": "theme_info",
+    "theme_name": "shopery",
+    "theme_author": "khalif",
+    "theme_version": "1.0.0",
+    "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes/os20/themes-by-shopify/dawn",
+    "theme_support_url": "https://support.shopify.com/"
+  }
+]
+>>>>>>> 3902f9e78a08ca9de9d5faba38b389d440702e49
