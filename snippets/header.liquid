@@ -1,24 +1,24 @@
 <header id="header">
-    <div
+  <div
     class="flex flex-row flex-wrap justify-center items-center bg-[#EDF2EE] text-[#2B572E] font-normal text-xs sm:text-sm leading-4 text-[#2B572E] gap-2  py-[12px] "
-    >
+  >
     Free Coupon Code: Use<span
-        class="mx-2 before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-[#00B307] relative inline-block font-semibold"
-        ><span
+      class="mx-2 before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-[#00B307] relative inline-block font-semibold"
+      ><span
         class="relative text-white"
         >NEW 26
-        </span></span
+      </span></span
     >for a Sale on Selected Items.<a
-        href="#"
-        class="underline text-[#00B307] font-semibold"
-        >SHOP NOW</a
+      href="#"
+      class="underline text-[#00B307] font-semibold"
+      >SHOP NOW</a
     >
-    </div>
-    <div
+  </div>
+  <div
     class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8 xl:px-0 flex flex-wrap md:flex-nowrap items-center md:justify-between gap-y-6 py-[24px]"
-    >
+  >
     <a class="order-1 md:order-1 w-[40%] md:w-auto md:mr-[20px] lg:mr-[0px]" href="/"
-        ><img
+      ><img
         class=""
         src="{{ 'img__header_logo.svg' | asset_url }}"
         width="auto"
@@ -28,68 +28,71 @@
         height="auto"
     ></a>
     <form class="flex order-3 w-full md:w-[50%] md:order-2" action="#">
-        <input
+      <input
         class="block p-3 pl-4 w-full text-sm text-gray-900 bg-white border border-[#00B307] rounded-none rounded-l-lg focus:ring-[#00B307] focus:border-[#00B307] outline-none caret-[#00B307]"
         placeholder="Search Here .."
         id="search"
         type="text"
         autocomplete="off"
 
-        ><button
+      ><button
         type="submit"
         class="px-5 text-sm font-medium text-center text-white rounded-none rounded-r-lg border border-[#00B307] cursor-pointer bg-[#00B307]"
-        >
+      >
         <img
-            class="w-7 h-7"
-            src="{{ 'img__header_search.svg' | asset_url }}"
-            width="auto"
-            height="auto"
-            alt="search icon"
-            width="auto"
-            height="auto"
+          class="w-7 h-7"
+          src="{{ 'img__header_search.svg' | asset_url }}"
+          width="auto"
+          height="auto"
+          alt="search icon"
+          width="auto"
+          height="auto"
         >
-        </button>
+      </button>
     </form>
     <div class="flex order-2 ml-auto md:ml-0 md:order-3 gap-x-3 md:gap-x-5">
-        <a href="#" class="flex mr-[-25px]"
+      <a href="#" class="flex mr-[-25px]"
         ><span
-            class="p-2 bg-[#00B307] w-5 h-5 rounded-full inline-flex items-center justify-center ml-1 text-xs font-bold text-white left-[40px] relative"
-            >99</span
+          class="p-2 bg-[#00B307] w-5 h-5 rounded-full inline-flex items-center justify-center ml-1 text-xs font-bold text-white left-[40px] relative"
+          >99</span
         ><img
-            src="{{ 'img__header_heart.svg' | asset_url }}"
-            width="auto"
-            height="auto"
-            alt="heart"
-            width="auto"
-            height="auto"></a
-        ><a class="flex" href="/cart"
+          src="{{ 'img__header_heart.svg' | asset_url }}"
+          width="auto"
+          height="auto"
+          alt="heart"
+          width="auto"
+          height="auto"></a
+      ><a class="flex" href="/cart"
         ><span
-            class="p-2 bg-[#00B307] w-5 h-5 rounded-full inline-flex items-center justify-center ml-1 text-xs font-bold text-white left-[35px] relative"
-            >25</span
+          class="p-2 bg-[#00B307] w-5 h-5 rounded-full inline-flex items-center justify-center ml-1 text-xs font-bold text-white left-[35px] relative"
+          >25</span
         ><img
-            src="{{ 'img__header_bag.svg' | asset_url }}"
-            width="auto"
-            height="auto"
-            alt="bag"
-            width="auto"
-            height="auto"
-        ></a>
-        <a class="space-y-2" href="/cart">
+          src="{{ 'img__header_bag.svg' | asset_url }}"
+          width="auto"
+          height="auto"
+          alt="bag"
+          width="auto"
+          height="auto"
+      ></a>
+      <a class="space-y-2" href="/cart">
         <p class="not-italic font-normal text-sm leading-[13px] text-[#4D4D4D]">Cart :</p>
         <p class="not-italic font-medium text-sm leading-[100%] text-[#1A1A1A]">$570.00</p>
-        </a>
+      </a>
     </div>
-    </div>
-    <div
+  </div>
+  <div
     class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8 xl:px-0 flex items-center justify-between gap-x-10 border-t py-[10px]"
-    >
+  >
     <ul class="flex gap-x-5 md:gap-x-8">
-        <li><a class="not-italic font-medium text-sm text-[#666666]" href="/">Home</a></li>
-        <li><a class="not-italic font-medium text-sm text-[#666666]" href="/shop">Shop</a></li>
-        <li><a class="not-italic font-medium text-sm text-[#666666]" href="#">Contact</a></li>
+      <li><a class="not-italic font-medium text-sm text-[#666666]" href="/">Home</a></li>
+      <li><a class="not-italic font-medium text-sm text-[#666666]" href="/shop">Shop</a></li>
+      <li><a class="not-italic font-medium text-sm text-[#666666]" href="#">Contact</a></li>
     </ul>
+    {% for link in linklists['main-menu'].links -%}
+      {{ link.title | link_to: link.url }}
+    {%- endfor %}
     <a href="#" class="flex gap-x-1 items-center space-x-1">
-        <img
+      <img
         src="{{ 'img__header_phone.svg' | asset_url }}"
         class="w-[32px] h-[32px] md:mt-2"
         width="auto"
@@ -97,12 +100,10 @@
         alt="Phone call"
         width="auto"
         height="auto"
-        >
-        <div>
-        <span class="hidden md:block not-italic font-medium text-xl leading-[30px] text-[#1A1A1A]"
-            >(219) 555-0114</span
-        >
-        </div>
+      >
+      <div>
+        <span class="hidden md:block not-italic font-medium text-xl leading-[30px] text-[#1A1A1A]">(219) 555-0114</span>
+      </div>
     </a>
-    </div>
+  </div>
 </header>
