@@ -62,10 +62,7 @@
       {% endif %}
     <h2 class="text-xl sm:text-2xl font-bold text-gray-900 sm:text-3xl">My Shopping Cart</h2>
     {% form 'cart', cart %}
-      {% if cart.empty? %}
-        <h3>No Item Found in the cart</h3>
-      {% else if %}
-        <div class="mt-6 sm:mt-8 md:gap-6 lg:flex lg:items-start xl:gap-8">
+      <div class="mt-6 sm:mt-8 md:gap-6 lg:flex lg:items-start xl:gap-8">
           <div class="mx-auto w-full flex-none lg:max-w-2xl xl:max-w-4xl">
             <div class="space-y-6">
               <div class="space-y-6 rounded-lg border border-gray-200 bg-white p-4 shadow-sm dark:border-gray-700 dark:bg-gray-800 md:p-6">
@@ -256,7 +253,6 @@
             </div>
           </div>
         </div>
-      {% endif %}
     {% endform %}
   </div>
 </section>
