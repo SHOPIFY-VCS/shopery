@@ -89,8 +89,8 @@
             </div>
         </div>
         <div class="mt-8 lg:col-span-5">
-            {% form 'product', product %}  {% endform %}
-            <form>
+            {% form 'product', product %}  
+            {% comment %} <form> {% endcomment %}
                 <div>
                     <h2 class="text-sm font-medium text-gray-900">Color</h2>
                     <div class="mt-2" id="headlessui-radiogroup-:R29r4v5uba:" role="radiogroup"
@@ -168,7 +168,8 @@
                     class="mt-8 flex w-full items-center justify-center rounded-md border border-transparent bg-slate-600 px-8 py-3 text-base font-medium text-white hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-offset-2">
                     Add to cart
                 </button>
-            </form>
+            {% comment %} </form> {% endcomment %}
+            {% endform %}
             <div class="mt-10">
                 <h2 class="text-sm font-medium text-gray-900">Description</h2>
                 <div class="prose prose-sm mt-4 text-gray-500">
