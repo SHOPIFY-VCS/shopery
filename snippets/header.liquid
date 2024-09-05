@@ -84,9 +84,9 @@
     class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8 xl:px-0 flex items-center justify-between gap-x-10 border-t py-[10px]"
   >
     <ul class="flex gap-x-5 md:gap-x-8">
-      <li><a class="not-italic font-medium text-sm text-[#666666]" href="/">Home</a></li>
+      {% comment %} <li><a class="not-italic font-medium text-sm text-[#666666]" href="/">Home</a></li>
       <li><a class="not-italic font-medium text-sm text-[#666666]" href="/shop">Shop</a></li>
-      <li><a class="not-italic font-medium text-sm text-[#666666]" href="#">Contact</a></li>
+      <li><a class="not-italic font-medium text-sm text-[#666666]" href="#">Contact</a></li> {% endcomment %}
     </ul>
     {% for link in linklists['main-menu'].links %}
       <li>
