@@ -3,13 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-      {% if page_title %}
-        {{ page_title }}
-      {% else %}
-        ecobazar
-      {% endif %}
-    </title>
+    <title>{{ page_title }}</title>
     {%- if settings.favicon != blank -%}
       <link rel="icon" href="{{ 'favicon.svg' | asset_url }}" type="image/svg+xml">
     {%- endif -%}
