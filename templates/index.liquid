@@ -372,7 +372,9 @@
         {{collections['on-sell-products'].title}}
       </h2>
       <div class="items space-y-4">
-        ;;;
+        {% for product in collections['featured-products'].products %}
+        {% render 'product-item-grid' , product: product %}
+        {% endfor %}
       </div>
     </div>
     {% comment %} Feature Product {% endcomment %}
