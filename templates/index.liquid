@@ -470,9 +470,9 @@
 </section>
 {% comment %} Best Selling Category {% endcomment %}
 <section class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8 xl:px-0  mb-[80px] mt-[40px]">
-  <div class="flex flex-row flex-wrap content-center justify-between items-center mb-[40px]">
-    <h2 class="text-xl sm:text-2xl font-bold text-gray-900 sm:text-3xl">Best Seller</h2>
-    <a href="/shop" class="not-italic font-medium text-sm sm:text-base text-[#00B307] flex gap-x-2"
+ <div class="flex flex-row flex-wrap content-center justify-between items-center mb-[40px]">
+    <h2 class="text-xl sm:text-2xl font-bold text-gray-900 sm:text-3xl">{{collections['featured-products'].title}}</h2>
+    <a href="{{collections['featured-products'].url}}" class="not-italic font-medium text-sm sm:text-base text-[#00B307] flex gap-x-2"
       >View All<img
         src="{{'img__heading_right-arrow.svg' |  asset_url}}"
         width="auto"
