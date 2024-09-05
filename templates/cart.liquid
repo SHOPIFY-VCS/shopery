@@ -256,3 +256,71 @@
    
   </div>
 </section>
+
+
+<h1>ANOTHER</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Original Price</th>
+      <th>Discounted Price</th>
+      <th>Quantity</th>
+      <th>Total</th>
+      <th>Savings</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% assign total_price = 0 %}
+    {% assign total_savings = 0 %}
+
+    {% for item in cart.items %}
+    <tr>
+      <!-- Item Name -->
+      <td>{{ item.product.title }}</td>
+
+      <!-- Original Price (Compare-at price) -->
+      <td>
+        {% if item.variant.compare_at_price %}
+          {{ item.variant.compare_at_price | money }}
+        {% else %}
+          {{ item.price | money }}
+        {% endif %}
+      </td>
+
+      <!-- Discounted Price (Actual price) -->
+      <td>{{ item.price | money }}</td>
+
+      <!-- Quantity -->
+      <td>{{ item.quantity }}</td>
+
+      <!-- Total for the line item (Discounted Price x Quantity) -->
+      <td>
+        {% assign line_total = item.quantity | times: item.price %}
+        {{ line_total | money }}
+      </td>
+
+      <!-- Savings -->
+      <td>
+        {% if item.variant.compare_at_price %}
+          {% assign line_savings = item.variant.compare_at_price | minus: item.price %}
+          {% assign line_savings_total = line_savings | times: item.quantity %}
+          {{ line_savings_total | money }}
+        {% else %}
+          {{ 0 | money }}
+        {% endif %}
+      </td>
+      
+      <!-- Update the total price and total savings -->
+      {% assign total_price = total_price | plus: line_total %}
+      {% assign total_savings = total_savings | plus: line_savings_total %}
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<!-- Total Price -->
+<p><strong>Total Price: </strong>{{ total_price | money }}</p>
+
+<!-- Total Savings -->
+<p><strong>Total Savings: </strong>{{ total_savings | money }}</p>
