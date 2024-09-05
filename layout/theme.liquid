@@ -1,10 +1,27 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    {{ content_for_header }}
-  </head>
-  <body>
-    {{ content_for_layout }}
-    <script src="https://cdn.tailwindcss.com" />
-  </body>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {{ content_for_header }}
+  <script src="https://cdn.tailwindcss.com"/>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  {{ content_for_layout }}
+</body>
+
 </html>
