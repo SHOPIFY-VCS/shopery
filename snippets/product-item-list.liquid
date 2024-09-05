@@ -2,7 +2,8 @@
           class="group flex relative border border-solid border-[#E6E6E6] rounded-[5px] hover:shadow-[0px_0px_6px_rgba(32,181,38,0.32)] h-min-[100px]">
           <div class="w-1/3">
             <img width="auto" height="auto" class="object-cover w-full h-full"
-              src="{{'img__products_image-9.svg' |  asset_url}}" alt="vegetables">
+              src="{{ product.featured_image | image_url }}"
+              alt="vegetables">
           </div>
           <div class="w-2/3 space-y-1 p-3 flex flex-col self-center">
             <a class="not-italic text-base font-semibold text-[#4D4D4D] group-hover:text-[#2C742F]"
