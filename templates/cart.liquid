@@ -182,20 +182,14 @@
                 <div class="space-y-2">
                   <dl class="flex items-center justify-between gap-4">
                     <dt class="text-base font-normal text-gray-500 dark:text-gray-400">Original price</dt>
-                    <dd class="text-base font-medium text-gray-900 dark:text-white">{{cart.original_total_price |  money}}</dd>
+                    <dd class="text-base font-medium text-gray-900 dark:text-white">{{cart.total_price |  money}}</dd>
                   </dl>
-                  <dl class="flex items-center justify-between gap-4">
+                  {% comment %} <dl class="flex items-center justify-between gap-4">
                     <dt class="text-base font-normal text-gray-500 dark:text-gray-400">Savings</dt>
                     <dd class="text-base font-medium text-green-600">-
-                        {% if item.variant.compare_at_price %}
-          {% assign line_savings = item.variant.compare_at_price | minus: item.price %}
-          {% assign line_savings_total = line_savings | times: item.quantity %}
-          {{ line_savings_total | money }}
-        {% else %}
-          {{ 0 | money }}
-        {% endif %}
+                        {{cart.total_discount |  money}}
                         </dd>
-                  </dl>
+                  </dl> {% endcomment %}
                   {% comment %} <dl class="flex items-center justify-between gap-4">
                     <dt class="text-base font-normal text-gray-500 dark:text-gray-400">Store Pickup</dt>
                     <dd class="text-base font-medium text-gray-900 dark:text-white">$99</dd>
@@ -204,6 +198,9 @@
                     <dt class="text-base font-normal text-gray-500 dark:text-gray-400">Tax</dt>
                     <dd class="text-base font-medium text-gray-900 dark:text-white">$799</dd>
                   </dl> {% endcomment %}
+
+
+                  
                 </div>
                 <dl class="flex items-center justify-between gap-4 border-t border-gray-200 pt-2 dark:border-gray-700">
                   <dt class="text-base font-bold text-gray-900 dark:text-white">Total</dt>
