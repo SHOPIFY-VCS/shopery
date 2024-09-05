@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page_title }}</title>
-        {%- if settings.favicon != blank -%}
-<link rel="icon" href="{{ 'favicon.svg' | asset_url }}" type="image/svg+xml">
+    {%- if settings.favicon != blank -%}
+      <link rel="icon" href="{{ 'favicon.svg' | asset_url }}" type="image/svg+xml">
     {%- endif -%}
     <script src="https://cdn.tailwindcss.com" />
     {{ content_for_header }}
