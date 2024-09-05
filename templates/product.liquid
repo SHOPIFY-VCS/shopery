@@ -172,17 +172,11 @@
                 <h2 class="text-sm font-medium text-gray-900">Description</h2>
                 <div class="prose prose-sm mt-4 text-gray-500">
                     <p>
-                        The Basic tee is an honest new take on a classic. The tee uses super soft, pre-shrunk cotton for
-                        true
-                        comfort and a dependable fit. They are hand cut and sewn locally, with a special dye technique
-                        that gives
-                        each tee it's own look.
+                        {{product.description}}
                     </p>
-                    <p>Looking to stock your closet? The Basic tee also comes in a 3-pack or 5-pack at a bundle
-                        discount.</p>
                 </div>
             </div>
-            <div class="mt-8 border-t border-gray-200 pt-8">
+            {% comment %} <div class="mt-8 border-t border-gray-200 pt-8">
                 <h2 class="text-sm font-medium text-gray-900">Fabric &amp; Care</h2>
                 <div class="prose prose-sm mt-4 text-gray-500">
                     <ul role="list">
@@ -192,7 +186,7 @@
                         <li>Machine wash cold with similar colors</li>
                     </ul>
                 </div>
-            </div>
+            </div> {% endcomment %}
             <section aria-labelledby="policies-heading" class="mt-10">
                 <h2 id="policies-heading" class="sr-only">Our Policies</h2>
                 <dl class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
