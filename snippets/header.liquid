@@ -88,9 +88,11 @@
       <li><a class="not-italic font-medium text-sm text-[#666666]" href="/shop">Shop</a></li>
       <li><a class="not-italic font-medium text-sm text-[#666666]" href="#">Contact</a></li>
     </ul>
-    {% for link in linklists['main-menu'].links -%}
-      {{ link.title | link_to: link.url }}
-    {%- endfor %}
+    {% for link in linklists['main-menu'].links %}
+      <li>
+        <a class="not-italic font-medium text-sm text-[#666666]" href="{{ link.url }}">{{ link.title }}</a>
+      </li>
+    {% endfor %}
     <a href="#" class="flex gap-x-1 items-center space-x-1">
       <img
         src="{{ 'img__header_phone.svg' | asset_url }}"
