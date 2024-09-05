@@ -200,7 +200,7 @@
     </div>
   </div>
 </section>
-{% for product in collections['sale-potions'].products %}
+{% for product in collections['featured-products'].products %}
   {{- product.title | link_to: product.url }}
 {% endfor %}
 {% comment %} Feature Products {% endcomment %}
