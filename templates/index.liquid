@@ -348,7 +348,7 @@
             class="object-cover w-full h-full"
             width="auto"
             height="auto"
-            src="{{ product.featured_image |  image_tag }}"
+            src="{{ product.featured_image |  image_tag | image_url: width: 'auto' }}"
             alt="vegetables"
           >
         </div>
