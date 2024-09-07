@@ -7,8 +7,7 @@
     <a href="{{article.url}}">
       <h1>{{ article.title }}</h1>
     </a>
-    <h1>{{ article.author }}</h1>
+    <h1>{{ article.author }} | {{ article.created_at | date: '%B %d, %Y' }}</h1>
     <h1>{{ article.content }}</h1>
-    <p>{{ article.created_at | date: '%B %d, %Y' }}</p>
   </div>
 {% endfor %}
