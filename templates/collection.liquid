@@ -3,7 +3,8 @@
     <h1>Collection Page</h1>
     <h3>{{ collection.title }}</h3>
     <br>
-    <select id="sort-by"></select>
+    {% comment %} =======  {% endcomment %}
+     <select id="sort-by"></select>
   {% assign sort_by = collection.sort_by | default: collection.default_sort_by %}
 
   {% for option in collection.sort_options %}
@@ -12,6 +13,7 @@
     </option>
   {% endfor %}
 </select>
+     {% comment %} ======== {% endcomment %}
     <br>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
       {% for product in collection.products %}
