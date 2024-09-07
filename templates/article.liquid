@@ -9,13 +9,13 @@
 
 {% if article.comments_enabled? %}
   <h1>Comment is enabled</h1>
-  <h1>======</h1>
+  <h1>===Comments===</h1>
   {% for comment in article.comments %}
     <p>{{ comment.title }}</p>
     <p>{{ comment.author }}</p>
     <p>{{ comment.content }}</p>
   {% endfor %}
-  <h1>======</h1>
+  {% comment %} <h1>======</h1> {% endcomment %}
   {% form 'new_comment', article %}
     {{ form.errors | default_errors }}
 
