@@ -1,0 +1,13 @@
+<h1>Blog Page</h1>
+
+<h2>{{ blog.title }} ||</h2>
+
+{% for article in blog.articles %}
+  <div class="border">
+    <a href="{{article.url}}">
+      <h1>{{ article.title }}</h1>
+    </a>
+    <h1>{{ article.author }}</h1>
+    <h1>{{ article.content }}</h1>
+  </div>
+{% endfor %}
