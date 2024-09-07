@@ -11,6 +11,8 @@
   <h1>Comment is enabled</h1>
   <h1>======</h1>
   {% for comment in article.comments %}
+    <p>{{ comment.title }}</p>
+    <p>{{ comment.author }}</p>
   {% endfor %}
   <h1>======</h1>
   {% form 'new_comment', article %}
