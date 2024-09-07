@@ -9,9 +9,10 @@
 
 {% if article.comments_enabled? %}
   <h1>Comment is enabled</h1>
-  <h1>=====</h1>
-
-  {% form 'new_comment', article %}{% endform %}
+  <h1>======</h1>
+  {% for comment in article.comments %}
+  {% endfor %}
+  <h1>======</h1>
   {% form 'new_comment', article %}
     {{ form.errors | default_errors }}
 
