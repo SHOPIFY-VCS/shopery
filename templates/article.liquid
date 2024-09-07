@@ -15,7 +15,7 @@
     <p>{{ comment.author }}</p>
     <p>{{ comment.content }}</p>
   {% endfor %}
-  {% comment %} <h1>======</h1> {% endcomment %}
+  <h1>===Comments Form===</h1>
   {% form 'new_comment', article %}
     {{ form.errors | default_errors }}
 
