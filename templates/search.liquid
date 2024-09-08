@@ -1,5 +1,6 @@
 {% if search.performed %}
   {% for result in search.results %}
+    <h1>{{ result }}</h1>
   {% endfor %}
 {% else %}
   <h1>Search not Working</h1>
