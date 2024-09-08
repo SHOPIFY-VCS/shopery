@@ -5,7 +5,7 @@
     {% elsif result.object_type == 'article' %}
       <h1>article</h1>
     {% elsif result.object_type == 'product' %}
-      <h1>result.title</h1>
+      <h1>{{ result.title }}</h1>
     {% endif %}
   {% endfor %}
 {% else %}
