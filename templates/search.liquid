@@ -1,2 +1,5 @@
-<h1>Search Page</h1>
-{{ search.results }}
+{% if search.performed %}
+  <h1>Search Working</h1>
+{% else %}
+  <h1>Search not Working</h1>
+{% endif %}
