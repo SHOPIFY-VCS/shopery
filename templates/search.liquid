@@ -1,7 +1,7 @@
 {% if search.performed %}
   {% for result in search.results %}
     {% if result.object_type == 'page' %}
-      <h1>page</h1>
+      <h1 class="text-xl bold">page</h1>
     {% elsif result.object_type == 'article' %}
       <h1>article</h1>
     {% elsif result.object_type == 'product' %}
