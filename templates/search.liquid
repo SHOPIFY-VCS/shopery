@@ -2,9 +2,9 @@
   {% for result in search.results %}
     {% if result.object_type == 'page' %}
       <h1>page</h1>
-    {% else %}
+    {% elsif result.object_type == 'article' %}
       <h1>article</h1>
-    {% else %}
+    {% elsif result.object_type == 'product' %}
       <h1>product</h1>
     {% endif %}
   {% endfor %}
