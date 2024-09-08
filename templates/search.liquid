@@ -15,4 +15,5 @@
   {% else %}
     <h1>Search not Working</h1>
   {% endif %}
+  {{ paginate | default_pagination }}
 {% endpaginate %}
