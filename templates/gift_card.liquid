@@ -9,6 +9,8 @@
   });
 </script>
 <h2>{{ gift_card.balance | money }}</h2>
+<h3>{{ gift_card.code }}</h3>
+
 {% if gift_card.pass_url %}
   <a href="{{ gift_card.pass_url }}">
     <img
