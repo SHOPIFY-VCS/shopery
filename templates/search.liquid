@@ -1,6 +1,6 @@
 {% if search.performed %}
   {% for result in search.results %}
-    <h1>{{ result.object_type }}</h1>
+    {% if result.object_type == 'page' %} {% endif %}
   {% endfor %}
 {% else %}
   <h1>Search not Working</h1>
