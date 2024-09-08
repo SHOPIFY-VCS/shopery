@@ -1,6 +1,12 @@
 {% if search.performed %}
   {% for result in search.results %}
-    {% if result.object_type == 'page' %} {% endif %}
+    {% if result.object_type == 'page' %}
+      <h1>page</h1>
+    {% else %}
+      <h1>article</h1>
+    {% else %}
+      <h1>product</h1>
+    {% endif %}
   {% endfor %}
 {% else %}
   <h1>Search not Working</h1>
