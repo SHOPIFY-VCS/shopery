@@ -21,7 +21,7 @@
               <div class="w-full md:w-1/2">
                 <img
                   class="w-full"
-                  src="{{'img__slider_image-1.svg' |  asset_url}}"
+                  src="{{ block.settings.single_slider_image | default: 'img__slider_image-1.svg' |  asset_url }}"
                   width="auto"
                   height="auto"
                   alt="fruits"
