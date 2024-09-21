@@ -9,14 +9,28 @@
 */
 {
   "current": {
+    "sections": {
+      "featured": {
+        "type": "featured",
+        "settings": {
+        }
+      }
+    },
     "content_for_index": [
-
+      "featured"
     ]
   },
   "presets": {
     "Default": {
+      "sections": {
+        "featured": {
+          "type": "featured",
+          "settings": {
+          }
+        }
+      },
       "content_for_index": [
-
+        "featured"
       ]
     }
   }
