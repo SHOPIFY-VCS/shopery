@@ -12,12 +12,5 @@
     "content_for_index": [
 
     ]
-  },
-  "presets": {
-    "Default": {
-      "content_for_index": [
-
-      ]
-    }
   }
 }
