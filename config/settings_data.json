@@ -9,8 +9,31 @@
 */
 {
   "current": {
+    "sections": {
+      "featured-collection": {
+        "type": "featured-collection",
+        "settings": {
+          "collection": "frontpage"
+        }
+      }
+    },
     "content_for_index": [
-
+      "featured-collection"
     ]
+  },
+  "presets": {
+    "Default": {
+      "sections": {
+        "featured-collection": {
+          "type": "featured-collection",
+          "settings": {
+            "collection": "frontpage"
+          }
+        }
+      },
+      "content_for_index": [
+        "featured-collection"
+      ]
+    }
   }
 }
