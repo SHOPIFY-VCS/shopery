@@ -23,7 +23,7 @@
                   class="w-full"
                   src="
                     {% if block.settings.single_slider_image != blank %}
-                      {{ block.settings.single_slider_image | asset_url }}
+                      {{ block.settings.single_slider_image }}
                     {% else %}
                       {{ 'img__slider_image-1.svg' | asset_url }}
                     {% endif %}
