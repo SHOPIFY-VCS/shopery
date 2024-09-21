@@ -110,22 +110,24 @@
     </a>
   </div>
 </header>
-{% schema %}
-{
-  "name": "Custom Section",
-  "settings": [
-    {
-      "type": "text",
-      "id": "section_title",
-      "label": "Section Title",
-      "default": "Welcome to My Store"
-    }
-  ],
-  "presets": [
-    {
-      "name": "Default",
-      "category": "Custom"
-    }
-  ]
-}
-{% endschema %}
+{% comment %}
+  {% schema %}
+  {
+    "name": "Custom Section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "section_title",
+        "label": "Section Title",
+        "default": "Welcome to My Store"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Default",
+        "category": "Custom"
+      }
+    ]
+  }
+  {% endschema %}
+{% endcomment %}
