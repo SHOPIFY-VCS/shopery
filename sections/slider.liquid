@@ -8,9 +8,10 @@
     {% endfor %}
     <div
       class="
-        relative w-full flex transition-transform duration-500 ease-in-out peer-checked/slider1:translate-x-0
-        peer-checked/slider2:translate-x-[-100%]
-        peer-checked/slider3:translate-x-[-200%]
+                relative w-full flex transition-transform duration-500 ease-in-out      {% for block in section.blocks %}
+          {% assign translate_value = forloop.index | minus: 1 %}
+          peer-checked/slider{{ forloop.index }}:translate-x-{% if forloop.index == 1 %}0{% else %}[-{{ translate_value }}00%]{% endif %}
+        {% endfor %}
       "
     >
       <div class="relative w-full flex-shrink-0 ">
