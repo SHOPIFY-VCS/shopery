@@ -21,7 +21,13 @@
               <div class="w-full md:w-1/2">
                 <img
                   class="w-full"
-                  src="{{ block.settings.single_slider_image | asset_url | default: 'img__slider_image-1.svg' }}"
+                  src="
+                    {% if block.settings.single_slider_image != blank %}
+                      {{ block.settings.single_slider_image | asset_url }}
+                    {% else %}
+                      {{ 'img__slider_image-1.svg' | asset_url }}
+                    {% endif %}
+                  "
                   width="auto"
                   height="auto"
                   alt="slider Image"
