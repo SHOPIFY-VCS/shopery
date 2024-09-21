@@ -1,57 +1,18 @@
 {% schema %}
 {
-  "name": "Slideshow",
-  "tag": "section",
-  "class": "slideshow",
-  "limit": 1,
+  "name": "Custom Section",
   "settings": [
     {
       "type": "text",
-      "id": "title",
-      "label": "Slideshow"
-    }
-  ],
-  "max_blocks": 5,
-  "blocks": [
-    {
-      "name": "Slide",
-      "type": "slide",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
-        }
-      ]
+      "id": "heading",
+      "label": "Heading"
     }
   ],
   "presets": [
     {
-      "name": "Slideshow",
-      "settings": {
-        "title": "Slideshow"
-      },
-      "blocks": [
-        {
-          "type": "slide"
-        },
-        {
-          "type": "slide"
-        }
-      ]
+      "name": "Custom Section Preset",
+      "category": "Custom"
     }
-  ],
-  "locales": {
-    "en": {
-      "title": "Slideshow"
-    },
-    "fr": {
-      "title": "Diaporama"
-    }
-  },
-  "enabled_on": {
-    "templates": ["*"],
-    "groups": ["footer"]
-  }
+  ]
 }
 {% endschema %}
