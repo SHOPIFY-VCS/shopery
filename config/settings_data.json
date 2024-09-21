@@ -8,19 +8,7 @@
 * ------------------------------------------------------------
 */
 {
-  "current": {
-    "sections": {
-      "featured-collection": {
-        "type": "featured-collection",
-        "settings": {
-          "collection": "frontpage"
-        }
-      }
-    },
-    "content_for_index": [
-      "featured-collection"
-    ]
-  },
+  "current": "Default",
   "presets": {
     "Default": {
       "sections": {
