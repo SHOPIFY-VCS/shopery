@@ -6,7 +6,6 @@
     {% for block in section.blocks %}
       <input class="hidden peer/slider{{ forloop.index }}" type="radio" id="slider{{ forloop.index }}" name="slider">
     {% endfor %}
-
     <div
       class="relative w-full flex transition-transform duration-500 ease-in-out peer-checked/slider1:translate-x-0 peer-checked/slider2:translate-x-[-100%] peer-checked/slider3:translate-x-[-200%]"
     >
