@@ -5,6 +5,7 @@
   >
     {% for block in section.blocks %}
       ABC {{ forloop.index }}
+      <input class="hidden peer/slider{{ forloop.index }}" type="radio" id="slider1" name="slider">
     {% endfor %}
     <input class="hidden peer/slider1" type="radio" id="slider1" name="slider">
     <input class="hidden peer/slider2" type="radio" id="slider2" name="slider">
