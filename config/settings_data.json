@@ -10,27 +10,27 @@
 {
   "current": {
     "sections": {
-      "featured": {
-        "type": "featured",
+      "dummy": {
+        "type": "dummy",
         "settings": {
         }
       }
     },
     "content_for_index": [
-      "featured"
+      "dummy"
     ]
   },
   "presets": {
     "Default": {
       "sections": {
-        "featured": {
-          "type": "featured",
+        "dummy": {
+          "type": "dummy",
           "settings": {
           }
         }
       },
       "content_for_index": [
-        "featured"
+        "dummy"
       ]
     }
   }
