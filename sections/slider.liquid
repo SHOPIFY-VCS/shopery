@@ -3,7 +3,7 @@
     class="col-span-2 sm:col-span-1 md:col-span-2 bg-gray-50 h-auto md:h-full flex flex-col relative w-full h-full overflow-hidden  bg-top bg-no-repeat py-[80px] md:py-[105px]"
     style="background-image: url('{{ 'img__bg_slider.svg' | asset_url }}');"
   >
-    {% for slider in block %}
+    {% for block in section.blocks %}
     {% endfor %}
     <input class="hidden peer/slider1" type="radio" id="slider1" name="slider">
     <input class="hidden peer/slider2" type="radio" id="slider2" name="slider">
