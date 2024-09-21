@@ -18,7 +18,10 @@
             "collection": "frontpage"
           }
         }
-      }
+      },
+      "content_for_index": [
+        "featured-collection"
+      ]
     }
   }
 }
