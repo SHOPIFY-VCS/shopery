@@ -14,10 +14,63 @@
         "type": "dummy",
         "settings": {
         }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+        }
+      },
+      "slider_XxgDpE": {
+        "type": "slider",
+        "blocks": {
+          "slider_wYJPKy": {
+            "type": "slider",
+            "settings": {
+              "single_slider_image": "shopify:\/\/shop_images\/single-sprout-in-a-pot_925x_27cc4231-0dc0-412e-8791-05ea366f8d9e.jpg",
+              "single_slider_subHeading": "Welcome to Ecobazar",
+              "single_slider_Heading": "Fresh & Healthy Organic Food",
+              "single_slider_sales_promotion": "Sale up to 30% OFF",
+              "single_slider_offer_text": "Free shipping on all your order. we deliver, you enjoy"
+            }
+          },
+          "slider_d49aFY": {
+            "type": "slider",
+            "settings": {
+              "single_slider_subHeading": "Welcome to Ecobazar",
+              "single_slider_Heading": "Fresh & Healthy Organic Food",
+              "single_slider_sales_promotion": "Sale up to 30% OFF",
+              "single_slider_offer_text": "Free shipping on all your order. we deliver, you enjoy"
+            }
+          },
+          "slider_Pw4XXe": {
+            "type": "slider",
+            "settings": {
+              "single_slider_image": "shopify:\/\/shop_images\/pot-with-a-single-sprout_925x_a606d333-4197-40c8-9a43-a04cbe031ea7.jpg",
+              "single_slider_subHeading": "Welcome to Ecobazar",
+              "single_slider_Heading": "Fresh & Healthy Organic Food",
+              "single_slider_sales_promotion": "Sale up to 30% OFF",
+              "single_slider_offer_text": "Free shipping on all your order. we deliver, you enjoy"
+            }
+          }
+        },
+        "block_order": [
+          "slider_wYJPKy",
+          "slider_d49aFY",
+          "slider_Pw4XXe"
+        ],
+        "settings": {
+          "show_dot": true
+        }
       }
     },
     "content_for_index": [
-      "dummy"
+      "dummy",
+      "slider_XxgDpE"
     ]
   },
   "presets": {
