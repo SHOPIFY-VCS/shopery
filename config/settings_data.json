@@ -39,10 +39,23 @@
               "single_slider_button_text": "Shop Now",
               "single_slider_button_link": ""
             }
+          },
+          "slider_RwyqXq": {
+            "type": "slider",
+            "settings": {
+              "single_slider_subHeading": "Welcome to Ecobazar",
+              "single_slider_Heading": "Fresh & Healthy Organic Food",
+              "single_slider_sales_promotion": "Sale up to",
+              "single_slider_sales_promotion_color": "30% OFF",
+              "single_slider_offer_text": "Free shipping on all your order. we deliver, you enjoy",
+              "single_slider_button_text": "Shop Now",
+              "single_slider_button_link": ""
+            }
           }
         },
         "block_order": [
-          "slider_6aqrcL"
+          "slider_6aqrcL",
+          "slider_RwyqXq"
         ],
         "settings": {
           "show_dot": true
