@@ -56,15 +56,17 @@
                     Free shipping on all your order. we deliver, you enjoy
                   </p>
                 {% endif %}
-                <a
-                  class="flex gap-x-2 not-italic font-semibold text-base text-white bg-[#00b307] w-full md:w-[200px] h-[50px] items-center justify-center rounded-full"
-                  href="#"
-                  >Shop now<img
-                    src="{{'img__slider_right-arrow.svg' |  asset_url}}"
-                    height="auto"
-                    width="auto"
-                    alt="right arrow"
-                ></a>
+                {% if block.settings.single_slider_button_text != blank %}
+                  <a
+                    class="flex gap-x-2 not-italic font-semibold text-base text-white bg-[#00b307] w-full md:w-[200px] h-[50px] items-center justify-center rounded-full"
+                    href="#"
+                    >Shop now<img
+                      src="{{'img__slider_right-arrow.svg' |  asset_url}}"
+                      height="auto"
+                      width="auto"
+                      alt="right arrow"
+                  ></a>
+                {% endif %}
               </div>
             </div>
           </div>
