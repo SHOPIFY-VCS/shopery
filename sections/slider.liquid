@@ -40,9 +40,11 @@
                     >Welcome to Ecobazar</span
                   >
                 {% endif %}
-                <h1 class="not-italic font-semibold text-4xl lg:text-5xl xl:text-7xl text-[#1A1A1A]">
-                  Fresh &amp; Healthy Organic Food
-                </h1>
+                {% if block.settings.single_slider_subHeading != blank %}
+                  <h1 class="not-italic font-semibold text-4xl lg:text-5xl xl:text-7xl text-[#1A1A1A]">
+                    Fresh &amp; Healthy Organic Food
+                  </h1>
+                {% endif %}
                 <h3 class="not-italic font-normal text-[32px] text-[#1A1A1A]">
                   Sale up to
                   <span class="text-[#FF8A00]">30% OFF</span>
