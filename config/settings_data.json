@@ -25,8 +25,25 @@
         "settings": {
         }
       },
-      "slider_XxgDpE": {
+      "slider_yFCFiw": {
         "type": "slider",
+        "blocks": {
+          "slider_d4J3UH": {
+            "type": "slider",
+            "settings": {
+              "single_slider_subHeading": "Welcome to Ecobazar",
+              "single_slider_Heading": "Fresh & Healthy Organic Food",
+              "single_slider_sales_promotion": "Sale up to",
+              "single_slider_sales_promotion_color": "50% OFF",
+              "single_slider_offer_text": "Free shipping on all your order. we deliver, you enjoy",
+              "single_slider_button_text": "Shop Now",
+              "single_slider_button_link": "shopify:\/\/products\/antique-drawers"
+            }
+          }
+        },
+        "block_order": [
+          "slider_d4J3UH"
+        ],
         "settings": {
           "show_dot": true
         }
@@ -34,7 +51,7 @@
     },
     "content_for_index": [
       "dummy",
-      "slider_XxgDpE"
+      "slider_yFCFiw"
     ]
   },
   "presets": {
