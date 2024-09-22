@@ -4,9 +4,6 @@
     style="background-image: url('{{ 'img__bg_slider.svg' | asset_url }}');"
   >
     {% for block in section.blocks %}
-      {%- if forloop.length < 0 -%}
-        <h3>No Slide Found. Please Add at least one slider..</h3>
-      {%- endif -%}
       <input class="hidden peer/slider{{ forloop.index }}" type="radio" id="slider{{ forloop.index }}" name="slider">
     {% endfor %}
     <div
