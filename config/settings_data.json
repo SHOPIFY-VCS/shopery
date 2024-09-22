@@ -32,10 +32,13 @@
             "type": "slider",
             "settings": {
               "single_slider_image": "shopify:\/\/shop_images\/single-sprout-in-a-pot_925x_27cc4231-0dc0-412e-8791-05ea366f8d9e.jpg",
-              "single_slider_subHeading": "Welcome to Ecobazar",
+              "single_slider_subHeading": "",
               "single_slider_Heading": "Fresh & Healthy Organic Food",
               "single_slider_sales_promotion": "Sale up to 30% OFF",
-              "single_slider_offer_text": "Free shipping on all your order. we deliver, you enjoy"
+              "single_slider_sales_promotion_color": "30% OFF",
+              "single_slider_offer_text": "Free shipping on all your order. we deliver, you enjoy",
+              "single_slider_button_text": "Shop Now",
+              "single_slider_button_link": ""
             }
           },
           "slider_d49aFY": {
@@ -44,7 +47,10 @@
               "single_slider_subHeading": "Welcome to Ecobazar",
               "single_slider_Heading": "Fresh & Healthy Organic Food",
               "single_slider_sales_promotion": "Sale up to 30% OFF",
-              "single_slider_offer_text": "Free shipping on all your order. we deliver, you enjoy"
+              "single_slider_sales_promotion_color": "30% OFF",
+              "single_slider_offer_text": "Free shipping on all your order. we deliver, you enjoy",
+              "single_slider_button_text": "Shop Now",
+              "single_slider_button_link": ""
             }
           },
           "slider_Pw4XXe": {
@@ -54,7 +60,10 @@
               "single_slider_subHeading": "Welcome to Ecobazar",
               "single_slider_Heading": "Fresh & Healthy Organic Food",
               "single_slider_sales_promotion": "Sale up to 30% OFF",
-              "single_slider_offer_text": "Free shipping on all your order. we deliver, you enjoy"
+              "single_slider_sales_promotion_color": "30% OFF",
+              "single_slider_offer_text": "Free shipping on all your order. we deliver, you enjoy",
+              "single_slider_button_text": "Shop Now",
+              "single_slider_button_link": ""
             }
           }
         },
