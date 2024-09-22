@@ -34,6 +34,8 @@
                 >
               </div>
               <div class="space-y-4 md:space-y-6 w-full md:w-1/2">
+                SSSD
+                {% if block.settings.single_slider_subHeading %} ACE {% endif %}
                 <span
                   class="not-italic font-medium text-[14px] tracking-[0.02em] uppercasenot-italic font-medium text-sm tracking-[0.02em] uppercase text-[#00B307]"
                   >Welcome to Ecobazar</span
@@ -62,88 +64,6 @@
           </div>
         </div>
       {% endfor %}
-      {% comment %}
-        <div class="relative w-full flex-shrink-0 ">
-          <div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8 xl:px-0">
-            <div class="flex flex-col items-center md:flex-row gap-12">
-              <div class="w-full md:w-1/2">
-                <img
-                  class="w-full"
-                  src="{{'img__slider_image-2.png' |  asset_url}}"
-                  height="auto"
-                  width="auto"
-                  alt="fruits"
-                >
-              </div>
-              <div class="space-y-4 md:space-y-6 w-full md:w-1/2">
-                <span
-                  class="not-italic font-medium text-[14px] tracking-[0.02em] uppercasenot-italic font-medium text-sm tracking-[0.02em] uppercase text-[#00B307]"
-                  >Welcome to Ecobazar</span
-                >
-                <h1 class="not-italic font-semibold text-4xl lg:text-5xl xl:text-7xl text-[#1A1A1A]">
-                  Fresh &amp; Healthy Organic Food
-                </h1>
-                <h3 class="not-italic font-normal text-[32px] text-[#1A1A1A]">
-                  Sale up to
-                  <span class="text-[#FF8A00]">30% OFF</span>
-                </h3>
-                <p class="not-italic font-normal text-sm text-[#808080]">
-                  Free shipping on all your order. we deliver, you enjoy
-                </p>
-                <a
-                  class="flex gap-x-2 not-italic font-semibold text-base text-white bg-[#00b307] w-full md:w-[200px] h-[50px] items-center justify-center rounded-full"
-                  href="#"
-                  >Shop now<img
-                    src="{{'img__slider_right-arrow.svg' |  asset_url}}"
-                    width="auto"
-                    height="auto"
-                    alt="right arrow"
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="relative w-full flex-shrink-0 ">
-          <div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8 xl:px-0">
-            <div class="flex flex-col items-center md:flex-row gap-12">
-              <div class="w-full md:w-1/2">
-                <img
-                  class="w-full"
-                  src="{{'img__slider_image-3.svg' |  asset_url}}"
-                  width="auto"
-                  height="auto"
-                  alt="fruits"
-                >
-              </div>
-              <div class="space-y-4 md:space-y-6 w-full md:w-1/2">
-                <span
-                  class="not-italic font-medium text-[14px] tracking-[0.02em] uppercasenot-italic font-medium text-sm tracking-[0.02em] uppercase text-[#00B307]"
-                  >Welcome to Ecobazar</span
-                >
-                <h1 class="not-italic font-semibold text-4xl lg:text-5xl xl:text-7xl text-[#1A1A1A]">
-                  Fresh &amp; Healthy Organic Food
-                </h1>
-                <h3 class="not-italic font-normal text-[32px] text-[#1A1A1A]">
-                  Sale up to
-                  <span class="text-[#FF8A00]">30% OFF</span>
-                </h3>
-                <p class="not-italic font-normal text-sm text-[#808080]">
-                  Free shipping on all your order. we deliver, you enjoy
-                </p>
-                <a
-                  class="flex gap-x-2 not-italic font-semibold text-base text-white bg-[#00b307] w-full md:w-[200px] h-[50px] items-center justify-center rounded-full"
-                  href="#"
-                  >Shop now<img
-                    src="{{'img__slider_right-arrow.svg' |  asset_url}}"
-                    width="auto"
-                    height="auto"
-                    alt="right arrow"
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      {% endcomment %}
     </div>
     {% if section.settings.show_dot == true %}
       <div class="absolute w-full flex justify-center gap-2 bottom-10">
@@ -220,10 +140,8 @@
           "default": "Shop Now"
         },
         {
-          "id": "single_slider_button_text",
-
           "type": "url",
-          "id": "button_link",
+          "id": "single_slider_button_link",
           "label": "Button link"
         }
       ]
