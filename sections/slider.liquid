@@ -51,9 +51,11 @@
                     <span class="text-[#FF8A00]">30% OFF</span>
                   </h3>
                 {% endif %}
-                <p class="not-italic font-normal text-sm text-[#808080]">
-                  Free shipping on all your order. we deliver, you enjoy
-                </p>
+                {% if block.settings.single_slider_Heading != blank %}
+                  <p class="not-italic font-normal text-sm text-[#808080]">
+                    Free shipping on all your order. we deliver, you enjoy
+                  </p>
+                {% endif %}
                 <a
                   class="flex gap-x-2 not-italic font-semibold text-base text-white bg-[#00b307] w-full md:w-[200px] h-[50px] items-center justify-center rounded-full"
                   href="#"
