@@ -27,7 +27,7 @@
         </div>
         <div class="relative mt-8 flex items-center gap-x-4">
           <img
-            src="{{ article.author_image   }}"
+            src="{{ article.author_image |  asset_url }}"
             alt=""
             class="h-10 w-10 rounded-full bg-gray-50"
             width="100"
