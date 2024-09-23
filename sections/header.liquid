@@ -102,23 +102,24 @@
         </li>
       {% endfor %}
     </ul>
-
-    <a href="#" class="flex gap-x-1 items-center space-x-1">
-      <img
-        src="{{ 'img__header_phone.svg' | asset_url }}"
-        class="w-[32px] h-[32px] md:mt-2"
-        width="auto"
-        height="auto"
-        alt="Phone call"
-        width="auto"
-        height="auto"
-      >
-      <div>
-        <span class="hidden md:block not-italic font-medium text-xl leading-[30px] text-[#1A1A1A]">
-          {{- section.settings.header_phone_number -}}
-        </span>
-      </div>
-    </a>
+    {% if section.settings.header_phone_number != blank %}
+      <a href="#" class="flex gap-x-1 items-center space-x-1">
+        <img
+          src="{{ 'img__header_phone.svg' | asset_url }}"
+          class="w-[32px] h-[32px] md:mt-2"
+          width="auto"
+          height="auto"
+          alt="Phone call"
+          width="auto"
+          height="auto"
+        >
+        <div>
+          <span class="hidden md:block not-italic font-medium text-xl leading-[30px] text-[#1A1A1A]">
+            {{- section.settings.header_phone_number -}}
+          </span>
+        </div>
+      </a>
+    {% endif %}
   </div>
 </header>
 
