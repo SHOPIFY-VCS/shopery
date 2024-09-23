@@ -17,7 +17,7 @@
     {% endif %}
   </div>
 
-  <div class="grid grid-cols-{{ section.settings.perRoWxs }} sm:grid-cols-{{ section.settings.perRoWsm }} md:grid-cols-{{ section.settings.perRoWmd }} lg:grid-cols-{{ section.settings.perRoWlg }} gap-6">
+  <div class="grid grid-cols-{{ section.settings.perRoWxs }} sm:grid-cols-{{ section.settings.perRoWsm }} md:grid-cols-{{ section.settings.perRoWmd }} lg:grid-cols-{{ section.settings.perRoWlg }} xl:grid-cols-{{ section.settings.perRoWxl }} gap-6">
     {% for product in collections[section.settings.gridViewCollectionId].products %}
       {% render 'product-item-grid', { product: product } %}
     {% endfor %}
