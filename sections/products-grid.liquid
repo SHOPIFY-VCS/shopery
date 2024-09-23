@@ -4,7 +4,7 @@
       {{ collections[section.settings.gridViewCollectionId].title }}
     </h2>
     <a
-      href="{{collections['featured-products'].url}}"
+      href="{{ collections[section.settings.gridViewCollectionId].url }}"
       class="not-italic font-medium text-sm sm:text-base text-[#00B307] flex gap-x-2"
       >View All<img
         src="{{'img__heading_right-arrow.svg' |  asset_url}}"
