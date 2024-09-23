@@ -111,24 +111,14 @@
   </div>
 </header>
 
-{% comment %}
-  {% schema %}
-  {
-    "name": "Custom Section",
-    "settings": [
-      {
-        "type": "text",
-        "id": "section_title",
-        "label": "Section Title",
-        "default": "Welcome to My Store"
-      }
-    ],
-    "presets": [
-      {
-        "name": "Default",
-        "category": "Custom"
-      }
-    ]
-  }
-  {% endschema %}
-{% endcomment %}
+{% schema %}
+{
+  "name": "Header",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Header"
+    }
+  ]
+}
+{% endschema %}
