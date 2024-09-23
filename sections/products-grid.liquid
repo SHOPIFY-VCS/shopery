@@ -16,6 +16,7 @@
       ></a>
     {% endif %}
   </div>
+  {{ section.settings.perRoWsm }}
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
     {% for product in collections[section.settings.gridViewCollectionId].products %}
       {% render 'product-item-grid', { product: product } %}
