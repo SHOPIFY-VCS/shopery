@@ -1,19 +1,21 @@
-{% paginate search.results by 2 %}
-  {% if search.performed %}
-    {% for result in search.results %}
-      {% if result.object_type == 'page' %}
-        <h1 class="text-xl bold uppercase">page</h1>
-        <a href="{{result.url}}">{{ result.title }}</a>
-      {% elsif result.object_type == 'article' %}
-        <h1 class="text-xl bold uppercase">article</h1>
-        <a href="{{result.url}}">{{ result.title }}</a>
-      {% elsif result.object_type == 'product' %}
-        <h1 class="text-xl bold uppercase">Product</h1>
-        <a href="{{result.url}}">{{ result.title }}</a>
-      {% endif %}
-    {% endfor %}
-  {% else %}
-    <h1>Search not Working</h1>
-  {% endif %}
-  {{ paginate | default_pagination }}
-{% endpaginate %}
+{% comment %}
+  {% paginate search.results by 2 %}
+    {% if search.performed %}
+      {% for result in search.results %}
+        {% if result.object_type == 'page' %}
+          <h1 class="text-xl bold uppercase">page</h1>
+          <a href="{{result.url}}">{{ result.title }}</a>
+        {% elsif result.object_type == 'article' %}
+          <h1 class="text-xl bold uppercase">article</h1>
+          <a href="{{result.url}}">{{ result.title }}</a>
+        {% elsif result.object_type == 'product' %}
+          <h1 class="text-xl bold uppercase">Product</h1>
+          <a href="{{result.url}}">{{ result.title }}</a>
+        {% endif %}
+      {% endfor %}
+    {% else %}
+      <h1>Search not Working</h1>
+    {% endif %}
+    {{ paginate | default_pagination }}
+  {% endpaginate %}
+{% endcomment %}
