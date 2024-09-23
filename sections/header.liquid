@@ -24,8 +24,8 @@
       ><img
         class=""
         src="
-          {% if section.settings.single_slider_image != blank %}
-            {{ section.settings.single_slider_image |  image_url: width:"1000"  }}
+          {% if section.settings.site_logo_image != blank %}
+            {{ section.settings.site_logo_image |  image_url: width:"1000"  }}
           {% else %}
             {{ 'img__header_logo.svg' | asset_url }}
           {% endif %}
