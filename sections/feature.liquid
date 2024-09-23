@@ -155,7 +155,48 @@
 {% schema %}
 {
   "name": "Feature",
-  "settings": [],
+  "settings": [
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "marginTop",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "label": "Margin Top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "marginBottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "label": "Margin Bottom",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "paddingTop",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "label": "Padding Top",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "paddingBottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "label": "Padding Bottom",
+      "default": 40
+    }
+  ],
   "presets": [
     {
       "name": "Feature"
