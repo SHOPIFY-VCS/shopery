@@ -2,8 +2,8 @@
   assign margin_bottom = section.settings.marginBottom
   assign margin_top = section.settings.marginTop
   assign padding_bottom = section.settings.paddingBottom
-  assign paddingTop = section.settings.paddingTop
-  assign itemGap = section.settings.itemGap
+  assign padding_top = section.settings.paddingTop
+  assign item_gap = section.settings.itemGap
   assign perRoWxs = section.settings.perRoWxs
   assign perRoWsm = section.settings.perRoWsm
   assign perRoWmd = section.settings.perRoWmd
@@ -11,7 +11,7 @@
   assign perRoWxl = section.settings.perRoWxl
   assign products_count = collections[section.settings.gridViewCollectionId].all_products_count
 %}
-<section class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8 xl:px-0  mb-[{{ margin_bottom }}px] mt-[{{ margin_top }}px] pb-[{{ padding_bottom }}px] pt-[{{ section.settings.paddingTop }}px]">
+<section class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8 xl:px-0  mb-[{{ margin_bottom }}px] mt-[{{ margin_top }}px] pb-[{{ padding_bottom }}px] pt-[{{ padding_top }}px]">
   <div class="flex flex-row flex-wrap content-center justify-between items-center mb-[40px]">
     <h2 class="text-xl sm:text-2xl font-bold text-gray-900 sm:text-3xl">
       {{ collections[section.settings.gridViewCollectionId].title }} ( {{ products_count }} )
@@ -30,7 +30,7 @@
     {% endif %}
   </div>
 
-  <div class="grid grid-cols-{{ section.settings.perRoWxs }} sm:grid-cols-{{ section.settings.perRoWsm }} md:grid-cols-{{ section.settings.perRoWmd }} lg:grid-cols-{{ section.settings.perRoWlg }} xl:grid-cols-{{ section.settings.perRoWxl }} gap-{{ section.settings.itemGap }}">
+  <div class="grid grid-cols-{{ section.settings.perRoWxs }} sm:grid-cols-{{ section.settings.perRoWsm }} md:grid-cols-{{ section.settings.perRoWmd }} lg:grid-cols-{{ section.settings.perRoWlg }} xl:grid-cols-{{ section.settings.perRoWxl }} gap-{{ item_gap }}">
     {% for product in collections[section.settings.gridViewCollectionId].products %}
       {% render 'product-item-grid', { product: product } %}
     {% endfor %}
