@@ -30,7 +30,7 @@
     {% endif %}
   </div>
 
-  <div class="grid grid-cols-{{ section.settings.perRoWxs }} sm:grid-cols-{{ section.settings.perRoWsm }} md:grid-cols-{{ section.settings.perRoWmd }} lg:grid-cols-{{ section.settings.perRoWlg }} xl:grid-cols-{{ section.settings.perRoWxl }} gap-{{ item_gap }}">
+  <div class="grid grid-cols-{{ per_row_xs }} sm:grid-cols-{{ per_row_sm }} md:grid-cols-{{ per_row_md }} lg:grid-cols-{{ per_row_lg }} xl:grid-cols-{{ per_row_xl }} gap-{{ item_gap }}">
     {% for product in collections[section.settings.gridViewCollectionId].products %}
       {% render 'product-item-grid', { product: product } %}
     {% endfor %}
