@@ -1,7 +1,17 @@
 {% liquid
+  assign marginBottom = section.settings.marginBottom
+  assign marginTop = section.settings.marginTop
+  assign paddingBottom = section.settings.paddingBottom
+  assign paddingTop = section.settings.paddingTop
+  assign itemGap = section.settings.itemGap
+  assign perRoWxs = section.settings.perRoWxs
+  assign perRoWsm = section.settings.perRoWsm
+  assign perRoWmd = section.settings.perRoWmd
+  assign perRoWlg = section.settings.perRoWlg
+  assign perRoWxl = section.settings.perRoWxl
   assign products_count = collections[section.settings.gridViewCollectionId].all_products_count
 %}
-<section class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8 xl:px-0  mb-[{{ section.settings.marginBottom }}px] mt-[{{ section.settings.marginTop }}px] pb-[{{ section.settings.paddingBottom }}px] pt-[{{ section.settings.paddingTop }}px]">
+<section class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8 xl:px-0  mb-[{{ marginBottom }}px] mt-[{{ section.settings.marginTop }}px] pb-[{{ section.settings.paddingBottom }}px] pt-[{{ section.settings.paddingTop }}px]">
   <div class="flex flex-row flex-wrap content-center justify-between items-center mb-[40px]">
     <h2 class="text-xl sm:text-2xl font-bold text-gray-900 sm:text-3xl">
       {{ collections[section.settings.gridViewCollectionId].title }} ( {{ products_count }} )
