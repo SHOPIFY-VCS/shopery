@@ -89,11 +89,29 @@
         "settings": {
           "show_dot": true
         }
+      },
+      "products_grid_zXhdpF": {
+        "type": "products-grid",
+        "settings": {
+          "gridViewCollectionId": "featured-products",
+          "changeViewAllText": "View All",
+          "perRoWxs": 1,
+          "perRoWsm": 2,
+          "perRoWmd": 3,
+          "perRoWlg": 4,
+          "perRoWxl": 4,
+          "marginTop": 0,
+          "marginBottom": 0,
+          "paddingTop": 40,
+          "paddingBottom": 40,
+          "itemGap": 6
+        }
       }
     },
     "content_for_index": [
       "slider_4WtDmH",
-      "feature_dbXHdN"
+      "feature_dbXHdN",
+      "products_grid_zXhdpF"
     ]
   },
   "presets": {
