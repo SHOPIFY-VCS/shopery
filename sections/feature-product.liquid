@@ -1,5 +1,6 @@
 {% liquid
   assign product = section.settings.product
+  assign product_featured_image = product.featured_image | image_url
   assign margin_top = section.settings.marginTop
   assign margin_bottom = section.settings.marginBottom
   assign padding_top = section.settings.paddingTop
@@ -14,7 +15,7 @@
         class="object-cover w-full h-full"
         width="auto"
         height="auto"
-        src="{{ product.featured_image | image_url }}"
+        src="{{ product_featured_image }}"
         alt="vegetables"
       >
     </div>
