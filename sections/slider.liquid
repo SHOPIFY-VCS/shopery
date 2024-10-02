@@ -34,7 +34,13 @@
                   | default: 'img__slider_image-3.svg'
                   | asset_url
                 %}
-                <img class="w-full" src="{{ image_url }}" alt="slider Image">
+                <img
+                  class="w-full"
+                  src="{{ image_url |  asset_url }}"
+                  alt="slider Image"
+                  width="auto"
+                  height="auto"
+                >
                 {% comment %} ===  {% endcomment %}
                 <img
                   class="w-full"
