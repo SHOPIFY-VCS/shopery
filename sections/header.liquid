@@ -1,6 +1,7 @@
 {% liquid
   assign show_topbar = section.settings.show_topbar
   assign coupon_code = section.settings.coupon_code
+  assign shop_url = section.settings.shop_url
 %}
 <header id="header">
   {%- if show_topbar -%}
@@ -15,7 +16,7 @@
           {{- coupon_code -}}
         </span></span
       >for a Sale on Selected Items.<a
-        href=" {{- section.settings.shop_url }}"
+        href=" {{- shop_url -}}"
         class="underline text-[#00B307] font-semibold"
         >SHOP NOW</a
       >
