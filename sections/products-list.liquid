@@ -3,6 +3,7 @@
   assign margin_bottom = section.settings.marginBottom
   assign padding_top = section.settings.paddingTop
   assign padding_bottom = section.settings.paddingBottom
+  assign hot_deals_collection_products = collections['hot-deals'].products
 %}
 <section
   id="multiple"
@@ -15,7 +16,7 @@
         {{ collections['hot-deals'].title }}
       </h2>
       <div class="items space-y-4">
-        {% for product in collections['hot-deals'].products %}
+        {% for product in hot_deals_collection_products %}
           {% render 'product-item-list', product: product %}
         {% endfor %}
       </div>
