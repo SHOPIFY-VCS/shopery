@@ -31,10 +31,10 @@
     {% comment %} On Sell Products {% endcomment %}
     <div class="col-span-4 md:col-span-2 xl:col-span-1 space-y-5">
       <h2 class="not-italic font-medium text-2xl leading-9 text-[#1A1A1A]">
-        {{ collections['on-sell-products'].title }}
+        {{ on_sell_products_collection_title }}
       </h2>
       <div class="items space-y-4">
-        {% for product in collections['on-sell-products'].products %}
+        {% for product in on_sell_products_collection_products %}
           {% render 'product-item-list', product: product %}
         {% endfor %}
       </div>
