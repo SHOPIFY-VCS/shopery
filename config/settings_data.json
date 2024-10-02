@@ -18,6 +18,11 @@
       "header": {
         "type": "header",
         "settings": {
+          "show_topbar": true,
+          "coupon_code": "NEW 26",
+          "shop_url": "",
+          "navMenuHeader": "",
+          "header_phone_number": "(219) 555-0114"
         }
       },
       "footer": {
@@ -63,7 +68,6 @@
       }
     },
     "content_for_index": [
-      "dummy",
       "slider_yFCFiw"
     ]
   },
