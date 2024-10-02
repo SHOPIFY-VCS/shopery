@@ -4,6 +4,7 @@
   assign shop_url = section.settings.shop_url
   assign site_logo = section.settings.site_logo_image
   assign cart_total_price = cart.total_price
+  assign menus = linklists[section.settings.navMenuHeader].links
 %}
 <header id="header">
   {%- if show_topbar -%}
@@ -103,7 +104,7 @@
     class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8 xl:px-0 flex items-center justify-between gap-x-10 border-t py-[10px]"
   >
     <ul class="flex gap-x-5 md:gap-x-8">
-      {% for link in linklists[section.settings.navMenuHeader].links %}
+      {% for link in menus %}
         <li>
           <a class="not-italic font-medium text-sm text-[#666666]" href="{{ link.url }}">{{ link.title }}</a>
         </li>
