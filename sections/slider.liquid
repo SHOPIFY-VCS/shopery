@@ -17,13 +17,13 @@
     {% endfor %}
     <div
       class="
-        relative w-full flex transition-transform duration-500 ease-in-out      {% for block in section.blocks %}
+        relative w-full flex transition-transform duration-500 ease-in-out      {% for block in blocks %}
           {% assign translate_value = forloop.index | minus: 1 %}
           peer-checked/slider{{ forloop.index }}:translate-x-{% if forloop.index == 1 %}0{% else %}[-{{ translate_value }}00%]{% endif %}
         {% endfor %}
       "
     >
-      {% for block in section.blocks %}
+      {% for block in blocks %}
         <div class="relative w-full flex-shrink-0 ">
           <div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8 xl:px-0">
             <div class="flex flex-col items-center md:flex-row gap-12">
