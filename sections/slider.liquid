@@ -6,16 +6,21 @@
     class="col-span-2 sm:col-span-1 md:col-span-2 bg-gray-50 h-auto md:h-full flex flex-col relative w-full h-full overflow-hidden  bg-top bg-no-repeat py-[80px] md:py-[105px]"
     style="background-image: url('{{ 'img__bg_slider.svg' | asset_url }}');"
   >
-    {% for block in blocks %}
-      <input class="hidden peer/slider{{ forloop.index }}" type="radio" id="slider{{ forloop.index }}" name="slider">
+    {%- for block in blocks -%}
+      <input
+        class="hidden peer/slider{{- forloop.index -}}"
+        type="radio"
+        id="slider{{- forloop.index -}}"
+        name="slider"
+      >
     {% endfor %}
     <div
       class="
         relative w-full flex transition-transform duration-500 ease-in-out
-        {% for block in blocks %}
-          {% assign translate_value = forloop.index | minus: 1 %}
-          peer-checked/slider{{ forloop.index }}:translate-x-{% if forloop.index == 1 %}0{% else %}[-{{ translate_value }}00%]{% endif %}
-        {% endfor %}
+        {%- for block in blocks -%}
+          {%- assign translate_value = forloop.index | minus: 1 -%}
+          peer-checked/slider{{- forloop.index }}:translate-x-{%- if forloop.index == 1 -%}0{% else %}[-{{- translate_value -}}00%]{%- endif -%}
+        {%- endfor -%}
       "
     >
       {% for block in blocks %}
