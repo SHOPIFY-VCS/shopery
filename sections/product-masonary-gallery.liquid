@@ -1,6 +1,12 @@
+{%- liquid
+  assign margin_top = section.settings.marginTop
+  assign margin_bottom = section.settings.marginBottom
+  assign padding_top = section.settings.paddingTop
+  assign padding_bottom = section.settings.paddingBottom
+-%}
 <section
   id="productMasonryGallery"
-  class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8 xl:px-0 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full mb-[{{ section.settings.marginBottom }}px] mt-[{{ section.settings.marginTop }}px] pb-[{{ section.settings.paddingBottom }}px] pt-[{{ section.settings.paddingTop }}px]"
+  class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8 xl:px-0 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full mb-[{{ margin_bottom }}px] mt-[{{ margin_top }}px] pb-[{{ padding_bottom }}px] pt-[{{ padding_top }}px]"
 >
   <div
     class="col-span-2 sm:col-span-1 md:col-span-2 bg-gray-50 h-auto md:h-full flex flex-col relative w-full h-full overflow-hidden rounded-lg"
