@@ -23,11 +23,11 @@
                 <img
                   class="w-full"
                   src="
-                    {% if block.settings.single_slider_image != blank %}
-                      {{- block.settings.single_slider_image |  image_url: width:"1000"  }}
-                    {% else %}
+                    {%- if block.settings.single_slider_image != blank -%}
+                      {{- block.settings.single_slider_image | image_url: width:'1000' -}}
+                    {%- else -%}
                       {{- 'img__slider_image-1.svg' | asset_url -}}
-                    {% endif %}
+                    {%- endif -%}
                   "
                   width="auto"
                   height="auto"
