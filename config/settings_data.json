@@ -106,12 +106,22 @@
           "paddingBottom": 40,
           "itemGap": 6
         }
+      },
+      "categories_j8ghWV": {
+        "type": "categories",
+        "settings": {
+          "marginTop": 0,
+          "marginBottom": 0,
+          "paddingTop": 40,
+          "paddingBottom": 40
+        }
       }
     },
     "content_for_index": [
       "slider_4WtDmH",
       "feature_dbXHdN",
-      "products_grid_zXhdpF"
+      "products_grid_zXhdpF",
+      "categories_j8ghWV"
     ]
   },
   "presets": {
