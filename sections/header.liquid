@@ -1,8 +1,9 @@
 {% liquid
   assign show_topbar = section.settings.show_topbar
+  assign coupon_code = section.settings.coupon_code
 %}
 <header id="header">
-  {%- if show_topbar %}
+  {%- if show_topbar -%}
     <div
       class="flex flex-row flex-wrap justify-center items-center bg-[#EDF2EE] text-[#2B572E] font-normal text-xs sm:text-sm leading-4 text-[#2B572E] gap-2  py-[12px] "
     >
@@ -11,7 +12,7 @@
         ><span
           class="relative text-white"
         >
-          {{- section.settings.coupon_code }}
+          {{- coupon_code -}}
         </span></span
       >for a Sale on Selected Items.<a
         href=" {{- section.settings.shop_url }}"
