@@ -4,7 +4,8 @@
   assign shop_url = section.settings.shop_url
   assign site_logo = section.settings.site_logo_image
   assign cart_total_price = cart.total_price
-  assign links = linklists[section.settings.navMenuHeader].links
+  assign menus = section.settings.navMenuHeader
+  assign links = linklists[menus].links
 %}
 <header id="header">
   {%- if show_topbar -%}
