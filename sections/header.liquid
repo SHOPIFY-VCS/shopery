@@ -3,6 +3,7 @@
   assign coupon_code = section.settings.coupon_code
   assign shop_url = section.settings.shop_url
   assign site_logo = section.settings.site_logo_image
+  assign cart_total_price = cart.total_price
 %}
 <header id="header">
   {%- if show_topbar -%}
@@ -94,7 +95,7 @@
       ></a>
       <a class="space-y-2" href="/cart">
         <p class="not-italic font-normal text-sm leading-[13px] text-[#4D4D4D]">Cart :</p>
-        <p class="not-italic font-medium text-sm leading-[100%] text-[#1A1A1A]">{{ cart.total_price | money }}</p>
+        <p class="not-italic font-medium text-sm leading-[100%] text-[#1A1A1A]">{{ cart_total_price | money }}</p>
       </a>
     </div>
   </div>
