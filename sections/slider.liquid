@@ -1,5 +1,5 @@
 {%- liquid
-  assign show_dot = section.settings.show_dot
+  assign blocks = section.blocks
 -%}
 
 <section id="heroSlider">
@@ -7,7 +7,7 @@
     class="col-span-2 sm:col-span-1 md:col-span-2 bg-gray-50 h-auto md:h-full flex flex-col relative w-full h-full overflow-hidden  bg-top bg-no-repeat py-[80px] md:py-[105px]"
     style="background-image: url('{{ 'img__bg_slider.svg' | asset_url }}');"
   >
-    {% for block in section.blocks %}
+    {% for block in blocks %}
       <input
         class="hidden peer/slider{{ forloop.index }}"
         type="radio"
