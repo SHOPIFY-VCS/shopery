@@ -6,6 +6,7 @@
   assign cart_total_price = cart.total_price
   assign menus = section.settings.navMenuHeader
   assign links = linklists[menus].links
+  assign phone_number = section.settings.header_phone_number
 %}
 <header id="header">
   {%- if show_topbar -%}
@@ -111,8 +112,8 @@
         </li>
       {% endfor %}
     </ul>
-    {% if section.settings.header_phone_number != blank %}
-      <a href="tel: {{- section.settings.header_phone_number -}}" class="flex gap-x-1 items-center space-x-1">
+    {%- if phone_number != blank -%}
+      <a href="tel: {{- phone_number -}}" class="flex gap-x-1 items-center space-x-1">
         <img
           src="{{ 'img__header_phone.svg' | asset_url }}"
           class="w-[32px] h-[32px] md:mt-2"
@@ -124,11 +125,11 @@
         >
         <div>
           <span class="hidden md:block not-italic font-medium text-xl leading-[30px] text-[#1A1A1A]">
-            {{- section.settings.header_phone_number -}}
+            {{- phone_number -}}
           </span>
         </div>
       </a>
-    {% endif %}
+    {%- endif %}
   </div>
 </header>
 
