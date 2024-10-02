@@ -6,19 +6,19 @@
     class="col-span-2 sm:col-span-1 md:col-span-2 bg-gray-50 h-auto md:h-full flex flex-col relative w-full h-full overflow-hidden  bg-top bg-no-repeat py-[80px] md:py-[105px]"
     style="background-image: url('{{ 'img__bg_slider.svg' | asset_url }}');"
   >
-    {% for block in section.blocks %}
+    {% for block in blocks %}
       <input class="hidden peer/slider{{ forloop.index }}" type="radio" id="slider{{ forloop.index }}" name="slider">
     {% endfor %}
     <div
       class="
         relative w-full flex transition-transform duration-500 ease-in-out
-        {% for block in section.blocks %}
+        {% for block in blocks %}
           {% assign translate_value = forloop.index | minus: 1 %}
           peer-checked/slider{{ forloop.index }}:translate-x-{% if forloop.index == 1 %}0{% else %}[-{{ translate_value }}00%]{% endif %}
         {% endfor %}
       "
     >
-      {% for block in section.blocks %}
+      {% for block in blocks %}
         <div class="relative w-full flex-shrink-0 ">
           <div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8 xl:px-0">
             <div class="flex flex-col items-center md:flex-row gap-12">
@@ -82,7 +82,7 @@
     </div>
     {% if section.settings.show_dot == true %}
       <div class="absolute w-full flex justify-center gap-2 bottom-10">
-        {% for block in section.blocks %}
+        {% for block in blocks %}
           {% if forloop.length > 1 %}
             <label
               class="block w-3 h-3 bg-[#00B307] cursor-pointer opacity-50 z-10 transition-all duration-300 ease-in-out hover:scale-125 hover:opacity-100 peer-checked/slider{{ forloop.index }}:opacity-100 peer-checked/slider{{ forloop.index }}:w-10"
