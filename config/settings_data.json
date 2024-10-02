@@ -39,12 +39,38 @@
           "paddingBottom": 40
         }
       },
-      "slider_3Bh7ch": {
+      "slider_4WtDmH": {
         "type": "slider",
         "blocks": {
-          "slider_dQMTc9": {
+          "slider_mUByrE": {
             "type": "slider",
             "settings": {
+              "single_slider_subHeading": "Welcome to Ecobazar",
+              "single_slider_Heading": "Fresh & Healthy Organic Food",
+              "single_slider_sales_promotion": "Sale up to",
+              "single_slider_sales_promotion_color": "30% OFF",
+              "single_slider_offer_text": "Free shipping on all your order. we deliver, you enjoy",
+              "single_slider_button_text": "Shop Now",
+              "single_slider_button_link": ""
+            }
+          },
+          "slider_KrWkbB": {
+            "type": "slider",
+            "settings": {
+              "single_slider_image": "shopify://shop_images/single-sprout-in-a-pot_925x_27cc4231-0dc0-412e-8791-05ea366f8d9e.jpg",
+              "single_slider_subHeading": "Welcome to Ecobazar",
+              "single_slider_Heading": "Fresh & Healthy Organic Food",
+              "single_slider_sales_promotion": "Sale up to",
+              "single_slider_sales_promotion_color": "30% OFF",
+              "single_slider_offer_text": "Free shipping on all your order. we deliver, you enjoy",
+              "single_slider_button_text": "Shop Now",
+              "single_slider_button_link": ""
+            }
+          },
+          "slider_ir6f7c": {
+            "type": "slider",
+            "settings": {
+              "single_slider_image": "shopify://shop_images/potted-seeds_925x_dabd994b-3416-4f4f-a7e5-0e32e111b6fe.jpg",
               "single_slider_subHeading": "Welcome to Ecobazar",
               "single_slider_Heading": "Fresh & Healthy Organic Food",
               "single_slider_sales_promotion": "Sale up to",
@@ -56,7 +82,9 @@
           }
         },
         "block_order": [
-          "slider_dQMTc9"
+          "slider_mUByrE",
+          "slider_KrWkbB",
+          "slider_ir6f7c"
         ],
         "settings": {
           "show_dot": true
@@ -64,7 +92,7 @@
       }
     },
     "content_for_index": [
-      "slider_3Bh7ch",
+      "slider_4WtDmH",
       "feature_dbXHdN"
     ]
   },
