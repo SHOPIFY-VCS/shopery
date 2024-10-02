@@ -28,6 +28,14 @@
           <div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8 xl:px-0">
             <div class="flex flex-col items-center md:flex-row gap-12">
               <div class="w-full md:w-1/2">
+                {% comment %} ===  {% endcomment %}
+                {% assign image_url = block.settings.single_slider_image
+                  | image_url: width: '1000'
+                  | default: 'img__slider_image-3.svg'
+                  | asset_url
+                %}
+                <img class="w-full" src="{{ image_url }}" alt="slider Image">
+                {% comment %} ===  {% endcomment %}
                 <img
                   class="w-full"
                   src="
