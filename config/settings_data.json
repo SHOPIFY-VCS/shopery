@@ -124,6 +124,32 @@
           "paddingTop": 40,
           "paddingBottom": 40
         }
+      },
+      "products_grid_xQhFcb": {
+        "type": "products-grid",
+        "settings": {
+          "gridViewCollectionId": "best-seller",
+          "changeViewAllText": "View All",
+          "perRoWxs": 1,
+          "perRoWsm": 2,
+          "perRoWmd": 3,
+          "perRoWlg": 4,
+          "perRoWxl": 4,
+          "marginTop": 0,
+          "marginBottom": 0,
+          "paddingTop": 40,
+          "paddingBottom": 40,
+          "itemGap": 6
+        }
+      },
+      "product_masonary_gallery_Ktij6x": {
+        "type": "product-masonary-gallery",
+        "settings": {
+          "marginTop": 0,
+          "marginBottom": 0,
+          "paddingTop": 40,
+          "paddingBottom": 40
+        }
       }
     },
     "content_for_index": [
@@ -131,7 +157,9 @@
       "feature_dbXHdN",
       "products_grid_zXhdpF",
       "categories_j8ghWV",
-      "promo_Q3QkUh"
+      "promo_Q3QkUh",
+      "products_grid_xQhFcb",
+      "product_masonary_gallery_Ktij6x"
     ]
   },
   "presets": {
