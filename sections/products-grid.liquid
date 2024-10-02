@@ -1,6 +1,7 @@
 {% liquid
   assign change_view_all_text = section.settings.changeViewAllText
   assign collection_id = section.settings.gridViewCollectionId
+  assign products = collections[collection_id].products
   assign item_gap = section.settings.itemGap
   assign margin_top = section.settings.marginTop
   assign margin_bottom = section.settings.marginBottom
@@ -32,7 +33,7 @@
   </div>
 
   <div class="grid grid-cols-{{ per_row_xs }} sm:grid-cols-{{ per_row_sm }} md:grid-cols-{{ per_row_md }} lg:grid-cols-{{ per_row_lg }} xl:grid-cols-{{ per_row_xl }} gap-{{ item_gap }}">
-    {% for product in collections[collection_id].products %}
+    {% for product in products %}
       {% render 'product-item-grid', { product: product } %}
     {% endfor %}
   </div>
