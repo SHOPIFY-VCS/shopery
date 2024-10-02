@@ -1,6 +1,12 @@
+{% liquid
+  assign margin_top = section.settings.marginTop
+  assign margin_bottom = section.settings.marginBottom
+  assign padding_top = section.settings.paddingTop
+  assign padding_bottom = section.settings.paddingBottom
+%}
 <section
   id="Static"
-  class="bg-no-repeat bg-cover mb-[{{ section.settings.marginBottom }}px] mt-[{{ section.settings.marginTop }}px] pb-[{{ section.settings.paddingBottom }}px] pt-[{{ section.settings.paddingTop }}px]"
+  class="bg-no-repeat bg-cover mb-[{{ margin_bottom }}px] mt-[{{ margin_top }}px] pb-[{{ section.settings.paddingBottom }}px] pt-[{{ section.settings.paddingTop }}px]"
   style="background-image: url('{{ 'img__bg_promo.svg' | asset_url }}');"
 >
   <div class="relative overflow-hidden ">
