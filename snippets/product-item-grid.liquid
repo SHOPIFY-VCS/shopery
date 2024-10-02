@@ -1,8 +1,8 @@
 {% liquid
   assign featured_image = product.featured_image
   assign title = product.title
-  assign product_url = product.url
-  assign product_price = product.price
+  assign url = product.url
+  assign price = product.price
   assign product_compare_at_price = product.compare_at_price
   assign product_rating = product.metafields.details.rating
 %}
@@ -30,7 +30,7 @@
     >
   </div>
   <div class="space-y-1 p-5">
-    <a class="not-italic text-base font-semibold text-[#4D4D4D] group-hover:text-[#2C742F]" href="{{product.url}}">
+    <a class="not-italic text-base font-semibold text-[#4D4D4D] group-hover:text-[#2C742F]" href="{{url}}">
       {{ title }}
     </a>
     <div class="flex justify-between items-center flex-wrap flex-row">
