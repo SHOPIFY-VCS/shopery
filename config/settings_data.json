@@ -21,7 +21,7 @@
           "show_topbar": true,
           "coupon_code": "NEW 26",
           "shop_url": "",
-          "navMenuHeader": "main-menuo",
+          "navMenuHeader": "main-menu",
           "header_phone_number": "(219) 555-0114"
         }
       },
@@ -119,6 +119,8 @@
       "promo_Q3QkUh": {
         "type": "promo",
         "settings": {
+          "promoTitle": "100% Trusted Organic Food Store",
+          "promocontent": "<p>This year, our new summer collection will shelter you from the harsh elements of a world that doesn't care if you live or die.</p>",
           "marginTop": 0,
           "marginBottom": 0,
           "paddingTop": 40,
