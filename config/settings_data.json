@@ -110,6 +110,17 @@
       "categories_j8ghWV": {
         "type": "categories",
         "settings": {
+          "categorySectionTitleId": "Top Categories",
+          "viewAllButton": "View ALL",
+          "viewAllButtonUrl": "",
+          "categorylist": [
+            "best-seller",
+            "deal-of-the-week",
+            "featured-products",
+            "hot-deals",
+            "on-sell-products",
+            "trending-products"
+          ],
           "marginTop": 0,
           "marginBottom": 0,
           "paddingTop": 40,
@@ -118,9 +129,64 @@
       },
       "promo_Q3QkUh": {
         "type": "promo",
+        "blocks": {
+          "promo_fNUXcm": {
+            "type": "promo",
+            "settings": {
+              "promo_image": "shopify://shop_images/img__promos_image-9.jpg"
+            }
+          },
+          "promo_cr4xrn": {
+            "type": "promo",
+            "settings": {
+              "promo_image": "shopify://shop_images/img__product-masonry_image-9_dc43183b-cd23-4105-9966-4845130efe93.jpg"
+            }
+          },
+          "promo_GrqJaQ": {
+            "type": "promo",
+            "settings": {
+              "promo_image": "shopify://shop_images/img__promos_image-11.jpg"
+            }
+          },
+          "promo_MFinEi": {
+            "type": "promo",
+            "settings": {
+              "promo_image": "shopify://shop_images/img__product-masonry_image-13.jpg"
+            }
+          },
+          "promo_TiwPLM": {
+            "type": "promo",
+            "settings": {
+              "promo_image": "shopify://shop_images/img__promos_image-8.jpg"
+            }
+          },
+          "promo_MFLBjN": {
+            "type": "promo",
+            "settings": {
+              "promo_image": "shopify://shop_images/img__product-masonry_image-11.jpg"
+            }
+          },
+          "promo_mXpXMp": {
+            "type": "promo",
+            "settings": {
+              "promo_image": "shopify://shop_images/img__promos_image-10.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "promo_fNUXcm",
+          "promo_cr4xrn",
+          "promo_GrqJaQ",
+          "promo_MFinEi",
+          "promo_TiwPLM",
+          "promo_MFLBjN",
+          "promo_mXpXMp"
+        ],
         "settings": {
           "promoTitle": "100% Trusted Organic Food Store",
           "promocontent": "<p>This year, our new summer collection will shelter you from the harsh elements of a world that doesn't care if you live or die.</p>",
+          "button_text": "Shop Collection",
+          "button_url": "",
           "marginTop": 0,
           "marginBottom": 0,
           "paddingTop": 40,
