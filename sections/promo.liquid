@@ -72,15 +72,17 @@
                         class="h-full w-full object-cover object-center"
                       >
                     </div>
-                    <div class="h-64 w-44 overflow-hidden rounded-lg">
-                      <img
-                        width="auto"
-                        height="auto"
-                        src="{{- blocks[4].settings.promo_image |  image_url -}}"
-                        alt=""
-                        class="h-full w-full object-cover object-center"
-                      >
-                    </div>
+                    {% if blocks[4].settings.promo_image != blank %}
+                      <div class="h-64 w-44 overflow-hidden rounded-lg">
+                        <img
+                          width="auto"
+                          height="auto"
+                          src="{{- blocks[4].settings.promo_image |  image_url -}}"
+                          alt=""
+                          class="h-full w-full object-cover object-center"
+                        >
+                      </div>
+                    {% endif %}
                   </div>
                   <div class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                     {% if blocks[5].settings.promo_image != blank %}
