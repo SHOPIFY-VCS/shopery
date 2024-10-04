@@ -34,12 +34,11 @@
               >
                 <div class="flex items-center space-x-6 lg:space-x-8 ml-[16px]">
                   <div class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                    {{ blocks[0].settings.promo_image }}
                     <div class="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
                       <img
                         width="auto"
                         height="auto"
-                        src="{{'img__promos_image-2.svg' |  asset_url}}"
+                        src="{{- blocks[0].settings.promo_image |  asset_url -}}"
                         alt=""
                         class="h-full w-full object-cover object-center"
                       >
