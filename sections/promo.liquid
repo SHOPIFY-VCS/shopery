@@ -63,15 +63,17 @@
                         class="h-full w-full object-cover object-center"
                       >
                     </div>
-                    <div class="h-64 w-44 overflow-hidden rounded-lg">
-                      <img
-                        width="auto"
-                        height="auto"
-                        src="{{- blocks[3].settings.promo_image |  image_url -}}"
-                        alt=""
-                        class="h-full w-full object-cover object-center"
-                      >
-                    </div>
+                    {% if blocks[4].settings.promo_image != blank %}
+                      <div class="h-64 w-44 overflow-hidden rounded-lg">
+                        <img
+                          width="auto"
+                          height="auto"
+                          src="{{- blocks[3].settings.promo_image |  image_url -}}"
+                          alt=""
+                          class="h-full w-full object-cover object-center"
+                        >
+                      </div>
+                    {% endif %}
                     {% if blocks[4].settings.promo_image != blank %}
                       <div class="h-64 w-44 overflow-hidden rounded-lg">
                         <img
