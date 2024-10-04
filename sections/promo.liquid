@@ -47,7 +47,7 @@
                       <img
                         width="auto"
                         height="auto"
-                        src="{{'img__promos_image-3.svg' |  asset_url}}"
+                        src="{{- blocks[1].settings.promo_image |  image_url -}}"
                         alt=""
                         class="h-full w-full object-cover object-center"
                       >
@@ -58,7 +58,7 @@
                       <img
                         width="auto"
                         height="auto"
-                        src="{{'img__promos_image-11.jpg' |  asset_url}}"
+                        src="{{- blocks[2].settings.promo_image |  image_url -}}"
                         alt=""
                         class="h-full w-full object-cover object-center"
                       >
@@ -67,7 +67,7 @@
                       <img
                         width="auto"
                         height="auto"
-                        src="{{'img__promos_image-10.jpg' |  asset_url}}"
+                        src="{{- blocks[3].settings.promo_image |  image_url -}}"
                         alt=""
                         class="h-full w-full object-cover object-center"
                       >
@@ -76,7 +76,7 @@
                       <img
                         width="auto"
                         height="auto"
-                        src="{{'img__promos_image-5.svg' |   asset_url}}"
+                        src="{{- blocks[4].settings.promo_image |  image_url -}}"
                         alt=""
                         class="h-full w-full object-cover object-center"
                       >
@@ -87,20 +87,22 @@
                       <img
                         width="auto"
                         height="auto"
-                        src="{{'img__promos_image-9.jpg' | asset_url}}"
+                        src="{{- blocks[5].settings.promo_image |  image_url -}}"
                         alt=""
                         class="h-full w-full object-cover object-center"
                       >
                     </div>
-                    <div class="h-64 w-44 overflow-hidden rounded-lg">
-                      <img
-                        width="auto"
-                        height="auto"
-                        src="{{'img__promos_image-8.jpg' |  asset_url}}"
-                        alt=""
-                        class="h-full w-full object-cover object-center"
-                      >
-                    </div>
+                    {% if blocks[6].settings.promo_image != blank %}
+                      <div class="h-64 w-44 overflow-hidden rounded-lg">
+                        <img
+                          width="auto"
+                          height="auto"
+                          src="{{- blocks[6].settings.promo_image |  image_url -}}"
+                          alt=""
+                          class="h-full w-full object-cover object-center"
+                        >
+                      </div>
+                    {% endif %}
                   </div>
                 </div>
               </div>
